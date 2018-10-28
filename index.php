@@ -1,13 +1,13 @@
 <?php session_start(); ?>
 <?php include_once 'includes/header.inc.php' ?>
-
-        <?php include_once 'includes/menu.inc.php' ?>
+<?php include_once 'includes/menu.inc.php' ?>
 
         <!-- Formulário de Cadastro -->
         <div class="row col-12">
             <h5 class="mx-auto font-weight-light text-center" style="padding-top: 50px;">Cadastro de Clientes</h5>
         </div>
 
+        <!-- Notificação do resultado -->
         <div class="row col-12 text-center">
             <?php
             if (isset($_SESSION['msg'])){
@@ -46,9 +46,6 @@
             <div class="row col-6 mx-auto">
                 <div class="form-group col-3 mx-auto text-left" style="padding-top: 20px;">
                     <input type="submit" value="cadastrar" class="btn btn-primary">
-                </div>
-                <div class="form-group col-3 mx-auto text-right" style="padding-top: 20px;">
-                    <input type="submit" value="limpar" class="btn btn-danger">
                 </div>
             </div>
         </form>
